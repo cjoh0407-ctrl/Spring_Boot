@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--타임리프 문법에 맞게 동작-->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>ADDRESS</th>
+            <th>PHONE</th>
+        </tr>
+        <tr th:each="member : ${list}">
+            <td th:text="${member.memberId}"></td>
+            <td th:text="${member.name}"></td>
+            <td th:text="${member.age}"></td>
+            <td th:text="${member.address}"></td>
+            <td th:text="${member.phone}"></td>
+        </tr>
+    </table>
+
+<br>
+<div th:text="${list}"></div>
+
+${list}
+
+</body>
+</html>
