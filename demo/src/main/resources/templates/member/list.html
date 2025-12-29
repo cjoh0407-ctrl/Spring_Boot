@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<!--타임리프 문법에 맞게 동작-->
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-    <table border="1">
-        <tr>
-            <th>ID</th>
-            <th>NAME</th>
-            <th>AGE</th>
-            <th>ADDRESS</th>
-            <th>PHONE</th>
-        </tr>
-        <tr th:each="member : ${list}">
-            <td th:text="${member.memberId}"></td>
-            <td th:text="${member.name}"></td>
-            <td th:text="${member.age}"></td>
-            <td th:text="${member.address}"></td>
-            <td th:text="${member.phone}"></td>
-        </tr>
-    </table>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>AGE</th>
+        <th>ADDRESS</th>
+        <th>PHONE</th>
+        <th>관리</th>
+    </tr>
+    <tr th:each="member : ${list}">
+        <td th:text="${member.memberId}">1</td>
+        <td th:text="${member.name}">2</td>
+        <td th:text="${member.age}">3</td>
+        <td th:text="${member.address}">4</td>
+        <td th:text="${member.phone}">5</td>
+        <td>
+            <button>수정</button>
+            <button>삭제</button>
+        </td>
+    </tr>
+</table>
 
 <br>
-<div th:text="${list}"></div>
-
-${list}
-
 </body>
 </html>
