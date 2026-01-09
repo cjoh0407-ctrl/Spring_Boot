@@ -18,4 +18,20 @@ public class MemberService {
     public List<MemberDTO> getList(){
         return memberMapper.findAll();
     }
+
+    public MemberDTO findById(int memberId){
+        return memberMapper.findById(memberId);
+    }
+
+    public void update(MemberDTO dto) {
+        memberMapper.update(dto);
+    }
+
+    public void delete(int memberId) {
+        memberMapper.delete(memberId);
+    }
+
+    public void insert(MemberDTO dto) {
+        memberMapper.insert(dto);
+    }
 }

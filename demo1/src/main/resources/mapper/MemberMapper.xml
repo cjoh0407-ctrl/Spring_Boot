@@ -2,10 +2,39 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.demo1.mapper.MemberMapper">
+<mapper namespace="com.example.demo1.mapper.MemberMapper"> <!--DTO로 해야하나?-->
     <select id="findAll" resultType="com.example.demo1.domain.MemberDTO">
-        select member_id, name, age, address, phone
+        select name, age, address, phone
         from member
         order by member_id desc;
     </select>
+
+    <select id="selectById" resultType="com.example.demo1.domain.MemberDTO"
+        parameterType="int">
+        select name, age, address, phone
+        from member
+        where member_id = #{memberId};
+    </select>
+
+    <insert id="insert" parameterType="com.example.demo1.domain.MemberDTO"
+        useGeneratedKeys="true" keyProperty="memberId">
+        insert into member (name, age, address, phone)
+        values (#{name}, #{age}, #{address}, #{phone})
+    </insert>
+
+    <update id="update" parameterType="com.example.demo1.domain.MemberDTO"
+            useGeneratedKeys="true" keyProperty="memberId">
+        update member
+        set name = #{name},
+            age = #{age},
+            address = #{address},
+            phone = #{phone}
+        where member_id = #{memberId}
+    </update>
+
+    <delete id="delete" parameterType="int">
+        delete from member
+        where member_id = #{memberId}
+    </delete>
+
 </mapper>
