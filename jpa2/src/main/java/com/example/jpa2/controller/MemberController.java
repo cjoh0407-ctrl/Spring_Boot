@@ -1,6 +1,7 @@
 package com.example.jpa2.controller;
 
 import com.example.jpa2.domian.Member;
+import com.example.jpa2.dto.MemberDTO;
 import com.example.jpa2.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
@@ -25,7 +26,7 @@ public class MemberController {
     public void findAll(@PageableDefault(size = 3, sort = "memberId",
             direction = Sort.Direction.DESC) Pageable pageable, Model model) {
 
-        Page<Member> memberPage = memberService.findAll(pageable);
+        Page<MemberDTO> memberPage = memberService.findAll(pageable);
 
         model.addAttribute("memberList", memberPage.getContent());
         model.addAttribute("page", memberPage);
@@ -39,31 +40,24 @@ public class MemberController {
 
     //신규회원등록하기
     @PostMapping("/new")
-    public String insert(@ModelAttribute Member member){
-        memberService.insert(member);
+    public String insert(@ModelAttribute MemberDTO memberDTO){
+        memberService.insert(memberDTO);
         return "redirect:/member/list";
     }
 
     //수정페이지로
     @GetMapping("/edit/{memberId}")
     public String getEdit(@PathVariable ("memberId") int id, Model model){
-        Member member = memberService.findById(id);
-        model.addAttribute("member", member);
+        MemberDTO memberDTO = memberService.findById(id);
+        model.addAttribute("member", memberDTO);
         return "member/edit";
     }
 
     //수정 완료 update
     @PostMapping("edit/{memberId}")
     public String update(@PathVariable("memberId") int id,
-                         @ModelAttribute Member memberUpdate){
-        Member member = memberService.findById(id);
-
-        member.setName(memberUpdate.getName());
-        member.setAge(memberUpdate.getAge());
-        member.setAddress(memberUpdate.getAddress());
-        member.setPhone(memberUpdate.getPhone());
-
-        memberService.update(member);
+                         @ModelAttribute MemberDTO memberUpdate){
+        memberService.update(id, memberUpdate);
         return "redirect:/member/list";
     }
 

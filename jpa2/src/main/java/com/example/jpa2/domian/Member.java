@@ -5,7 +5,6 @@ import lombok.*;
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2
-@Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
@@ -28,4 +27,11 @@ public class Member {
     private String address;
     private String phone;
 
+
+    public void updateInfo(String name, int age, String address, String phone){
+        this.name = name;
+        this.age = age;
+        this.address = address;
+        this.phone = phone;
+    }
 }

@@ -62,6 +62,4 @@ public class MemberService {
         log.info("---------------end findByAll---------------");
         return memberPage;
     }
-    
-    
 }
