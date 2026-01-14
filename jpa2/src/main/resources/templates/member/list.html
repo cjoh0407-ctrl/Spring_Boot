@@ -56,18 +56,17 @@
 
 <div style="margin-top: 20px; text-align: center">
     <a th:href="@{/member/list(page=${page.number-1})}"
-       th:if="${page.hasPrevious()}" style="margin-right: 10px">[이전]</a>
+       th:if="${page.hasPrevious()}">[이전]</a>
 
-<!--    ${#numbers.sequence(시작,끝) -> 시작, 끝 반복-->
     <span th:each="idx : ${#numbers.sequence(0, page.totalPages-1)}">
         <a th:href="@{/member/list(page=${idx})}"
-            th:text="${idx+1}"
-            th:style="${idx == page.number} ? 'font-weight:bold; color:blue' : ''"
-            style="margin: 0 5px; text-decoration: none"></a>
+           th:text="${idx+1}"
+           th:style="${idx == page.number} ? 'font-weight:bold; color:blue' : ''"
+           style="margin: 0 5px; text-decoration: none"/>
     </span>
 
     <a th:href="@{/member/list(page=${page.number+1})}"
-       th:if="${page.hasNext()}" style="margin-left: 10px">[다음]</a>
+       th:if="${page.hasNext()}">[다음]</a>
 </div>
 
 </body>
