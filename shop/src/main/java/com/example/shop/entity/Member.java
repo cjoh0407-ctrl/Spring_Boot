@@ -40,7 +40,7 @@ public class Member {
                 .email(memberFormDto.getEmail())
                 .password(passwordEncoder.encode(memberFormDto.getPassword()))  // 비밀번호 암호화 시킴
                 .address(memberFormDto.getAddress())
-                .role(Role.USER)
+                .role(Role.ADMIN)
                 .build();
 
 
