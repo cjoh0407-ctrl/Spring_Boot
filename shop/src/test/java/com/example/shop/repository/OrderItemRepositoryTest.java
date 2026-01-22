@@ -2,6 +2,7 @@ package com.example.shop.repository;
 
 import com.example.shop.constant.ItemSellStatus;
 import com.example.shop.entity.Item;
+import com.example.shop.entity.Member;
 import com.example.shop.entity.Order;
 import com.example.shop.entity.OrderItem;
 import jakarta.persistence.EntityManager;
@@ -21,41 +22,38 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @Log4j2
 @Transactional
-class OrderRepositoryTest {
+class OrderItemRepositoryTest {
 
     @Autowired
-    OrderRepository orderRepository;
-
+    private OrderItemRepository orderItemRepository;
     @Autowired
-    ItemRepository itemRepository;
+    private MemberRepository memberRepository;
+    @Autowired
+    private OrderRepository orderRepository;
+    @Autowired
+    private ItemRepository itemRepository;
 
     @PersistenceContext
-    EntityManager em;
+    private EntityManager em;
 
-    public Item createItem() {
-
+    public Item createItem(){
         Item item = new Item();
-
         item.setItemNm("테스트 상품");
-        item.setPrice(1000);
+        item.setPrice(10000);
         item.setItemDetail("상세설명");
         item.setItemSellStatus(ItemSellStatus.SELL);
         item.setStockNumber(100);
         item.setRegTime(LocalDateTime.now());
-        item.setUpdateTime(LocalDateTime.now());
 
+        item.setUpdateTime(LocalDateTime.now());
         return item;
     }
 
-    @Test
-    @DisplayName("영속성 전이 테스트")
-    public void cascadeTest(){
+    public Order createOrder(){
         Order order = new Order();
-
-        for (int i = 0; i < 3; i++) {
+        for(int i=0;i<3;i++){
             Item item = createItem();
             itemRepository.save(item);
-
             OrderItem orderItem = new OrderItem();
             orderItem.setItem(item);
             orderItem.setCount(10);
@@ -63,14 +61,26 @@ class OrderRepositoryTest {
             orderItem.setOrder(order);
             order.getOrderItems().add(orderItem);
         }
+        Member member = new Member();
+        memberRepository.save(member);
+        order.setMember(member);
+        orderRepository.save(order);
+        return order;
+    }
 
-        orderRepository.saveAndFlush(order);
+    @Test
+    @DisplayName("지연 로딩 테스트")
+    public void lazeLoadingTest() {
+
+        Order order = createOrder();
+        Long orderItemId = order.getOrderItems().get(1).getId();
+        log.info("orderItemId : " + orderItemId);
+        em.flush();
         em.clear();
 
-        Order savedOrder = orderRepository.findById(order.getId())
-                .orElseThrow(() -> new EntityNotFoundException());
+        OrderItem orderItem = orderItemRepository.findById(orderItemId)
+                .orElseThrow(EntityNotFoundException::new);
 
-        assertEquals(3, savedOrder.getOrderItems().size());
-
+        log.info("Order Class : " + orderItem.getOrder().getId());
     }
 }

@@ -1,7 +1,5 @@
 package com.example.shop.dto;
 
-import com.example.shop.constant.ItemSellStatus;
-import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -11,7 +9,7 @@ import java.time.LocalDateTime;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ItemDTO {
+public class ItemDto {
 
     private Long id;    //상품 코드
     private String itemNm;  // 상품 명

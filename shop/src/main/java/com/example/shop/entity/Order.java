@@ -15,14 +15,14 @@ import java.util.List;
 @Getter
 @Setter
 @ToString
-public class Order {
+public class Order extends BaseEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "order_id")
     private Long id;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_id")
     private Member member;
 
@@ -33,10 +33,8 @@ public class Order {
 
     @OneToMany(mappedBy = "order",      // 이 필드는 연관관계의 주인이 아니니, 데이터베이스 외래 키(FK)를 관리하지 마라
                 cascade = CascadeType.ALL,
-                orphanRemoval = true)
-    private List<OrderItem> orderItem = new ArrayList<>();
-
-    private LocalDateTime regTime;      // 주문 시간
-    private LocalDateTime updateTime;   // 수정 시간
+                orphanRemoval = true,
+                fetch = FetchType.LAZY)
+    private List<OrderItem> orderItems = new ArrayList<>();
 
 }
