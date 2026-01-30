@@ -1,6 +1,7 @@
 package com.example.shop.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Min;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -24,4 +25,12 @@ public class CartItem extends BaseEntity{
     private Item item;
 
     private int count;
+
+    public static CartItem createCartItem(Cart cart, Item item, int count) {
+        return null;
+    }
+
+    public void addCount(int count){
+        this.count = count;
+    }
 }

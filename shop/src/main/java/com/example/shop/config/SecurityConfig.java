@@ -8,7 +8,6 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.util.matcher.AndRequestMatcher;
 
 @Configuration
 @EnableWebSecurity
@@ -16,24 +15,24 @@ import org.springframework.security.web.util.matcher.AndRequestMatcher;
 public class SecurityConfig {
 
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http){
-        log.info("---------------------------securityFilterChain------------------------------");
-
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws  Exception{
+        log.info("---------------securityFilterChain---------------------------");
         http
+//                .csrf(config -> config.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/css/**", "/js/**", "/img/**", "/images/**").permitAll()
+                        .requestMatchers("/css/**","/js/**", "/img/**", "/images/**").permitAll()
                         .requestMatchers("/", "/members/**", "/item/**").permitAll()
                         .requestMatchers("/admin/**").hasRole("ADMIN")
                         .anyRequest().authenticated()
-                )
 
+                )
                 .formLogin(login -> login
                                 .loginPage("/members/login")
                                 .loginProcessingUrl("/members/login")
                                 .failureUrl("/members/login/error")
                                 .defaultSuccessUrl("/", true)
-                                .usernameParameter("email") //name : username 기입할 필요 없음. 지금은 email로 하기에 필요
-//               .passwordParameter("pwd")   // 만약 name : password가 아닌 pwd 라면
+                                .usernameParameter("email") //name: username 기입할 필요 없음
+                        //.passwordParameter("pwd") //만약 name: pasword아니고 name: pwd
                 )
                 .logout(logout -> logout
                         .logoutUrl("/members/logout")
@@ -46,9 +45,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    public PasswordEncoder passwordEncoder(){   // 비밀번호 암호화 시켜줌
+    public PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
-
-
 }

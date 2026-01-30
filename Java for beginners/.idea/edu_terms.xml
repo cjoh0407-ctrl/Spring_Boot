@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="TermsProjectSettings">
+    <currentTermsLanguage>en</currentTermsLanguage>
+    <terms>
+      <map>
+        <entry key="en">
+          <value>
+            <map>
+              <entry key="4498089">
+                <value>
+                  <list>
+                    <Term value="primitive type" definition="A basic data type provided by a programming language, not an object." />
+                    <Term value="instance methods" definition="Methods that belong to an object instance, not the class itself." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="39994299">
+                <value>
+                  <list>
+                    <Term value="instantiate" definition="To create a specific instance of an object or array in memory using the 'new' keyword." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="146846183">
+                <value>
+                  <list>
+                    <Term value="main method" definition="The entry point method in Java applications, defined as public static void main(String[] args)." />
+                    <Term value=".java file" definition="A source code file written in the Java programming language, typically compiled to bytecode." />
+                    <Term value="compiler" definition="A program that translates source code into executable code or bytecode." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="153664861">
+                <value>
+                  <list>
+                    <Term value="iteration" definition="A single cycle or repetition of a loop's body in programming." />
+                    <Term value="conditional" definition="A statement that executes code only if a specified condition is true." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="174228237">
+                <value>
+                  <list>
+                    <Term value="instance method" definition="A method that belongs to an object instance, not to the class itself." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="286933269">
+                <value>
+                  <list>
+                    <Term value="initialize" definition="To assign an initial value to a variable when it is declared." />
+                    <Term value="syntax" definition="The set of rules that defines the structure of valid statements in a programming language." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="374787955">
+                <value>
+                  <list>
+                    <Term value="static" definition="A keyword that indicates a method or variable belongs to the class, not instances." />
+                    <Term value="length()" definition="A method that returns the number of characters in a String." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="386892893">
+                <value>
+                  <list>
+                    <Term value="syntax" definition="The set of rules that defines how code must be written in a programming language." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="394179273">
+                <value>
+                  <list>
+                    <Term value="wrapper classes" definition="Classes that encapsulate primitive data types as objects, like Integer for int in Java." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="475567448">
+                <value>
+                  <list>
+                    <Term value="console" definition="An output window where a program displays text or messages during execution." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="486922715">
+                <value>
+                  <list>
+                    <Term value="2D arrays" definition="Arrays with two dimensions, often used to represent grids or tables in Java." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="508098711">
+                <value>
+                  <list>
+                    <Term value="ArrayList" definition="A resizable array implementation in Java's Collections Framework, allowing dynamic storage and retrieval of objects." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="526788683">
+                <value>
+                  <list>
+                    <Term value="isVIPClient" definition="A boolean variable indicating whether a customer has VIP status in the program." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="581073511">
+                <value>
+                  <list>
+                    <Term value="static" definition="A keyword in Java indicating a method or variable belongs to the class, not instances." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="623574329">
+                <value>
+                  <list>
+                    <Term value="operator" definition="A symbol that performs an action on one or more values, such as +, -, *, or /." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="625828145">
+                <value>
+                  <list>
+                    <Term value="infinite cycle" definition="A loop that never ends because its exit condition is never met." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="663078726">
+                <value>
+                  <list>
+                    <Term value="JRE" definition="Java Runtime Environment; provides libraries and resources to run Java applications." />
+                    <Term value="compiler" definition="A program that translates source code into executable code for the computer to run." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="681291401">
+                <value>
+                  <list>
+                    <Term value="operator precedence" definition="Rules that determine the order in which operators are evaluated in an expression." />
+                    <Term value="integer division" definition="Division operation where the result is an integer, discarding any fractional part." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="708850433">
+                <value>
+                  <list>
+                    <Term value="void" definition="A keyword in Java indicating a method does not return any value." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="709254056">
+                <value>
+                  <list>
+                    <Term value="Sheep" definition="A class representing sheep objects, often used as an example in object-oriented programming." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="765496906">
+                <value>
+                  <list>
+                    <Term value="IDE" definition="Integrated Development Environment; software that provides tools for writing, testing, and debugging code." />
+                    <Term value="compiling" definition="The process of converting source code into machine code or bytecode for execution." />
+                    <Term value="JVM" definition="Java Virtual Machine; runs Java bytecode, enabling Java programs to be platform-independent." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="790415469">
+                <value>
+                  <list>
+                    <Term value="integer" definition="A data type representing whole numbers, positive or negative, without decimals." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="811575268">
+                <value>
+                  <list>
+                    <Term value="break" definition="A statement used to exit a loop or switch statement immediately in Java." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="826301480">
+                <value>
+                  <list>
+                    <Term value="assignment operator" definition="Symbol (=) used to assign a value to a variable in Java." />
+                    <Term value="precedence" definition="The order in which operations are evaluated in an expression." />
+                    <Term value="escaping character" definition="A special character (like \) used to represent characters not easily typed or visible." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="883084506">
+                <value>
+                  <list>
+                    <Term value="access modifier" definition="A keyword that sets the visibility of a class member to other classes." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="903725586">
+                <value>
+                  <list>
+                    <Term value="ArrayList" definition="A resizable array implementation in Java, part of the java.util package." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="909729228">
+                <value>
+                  <list>
+                    <Term value="instance method" definition="A method that belongs to an object and operates on that object's data." />
+                    <Term value="invoked" definition="The act of calling or executing a method or function in code." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="921222428">
+                <value>
+                  <list>
+                    <Term value="ArrayLists" definition="A resizable array implementation in Java, part of the java.util package." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="931326089">
+                <value>
+                  <list>
+                    <Term value="method" definition="A function defined inside a class in object-oriented programming, like Java." />
+                    <Term value="class" definition="A blueprint for creating objects, defining data and behavior in object-oriented programming." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="934983136">
+                <value>
+                  <list>
+                    <Term value="indexOf" definition="Returns the index of a substring within a string, or -1 if not found." />
+                    <Term value="two-dimensional" definition="An array structure with rows and columns, like a table or grid." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="983694976">
+                <value>
+                  <list>
+                    <Term value="method" definition="A function associated with an object or class in object-oriented programming." />
+                    <Term value="String" definition="A data type representing a sequence of characters in Java." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="992640493">
+                <value>
+                  <list>
+                    <Term value="for loop" definition="A control structure that repeats a block of code a specific number of times." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1167606548">
+                <value>
+                  <list>
+                    <Term value="binary" definition="A numbering system using only two digits: 0 and 1, often representing true and false." />
+                    <Term value="Compound" definition="A statement formed by combining two or more expressions using logical operators." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1194015323">
+                <value>
+                  <list>
+                    <Term value="smartMode" definition="A boolean variable indicating if the smart mode feature is enabled or disabled in the system." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1196248852">
+                <value>
+                  <list>
+                    <Term value="console" definition="A text-based interface for displaying output and receiving input from the user." />
+                    <Term value="cursor" definition="A movable indicator showing the current position for user input or output on the screen." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1208561450">
+                <value>
+                  <list>
+                    <Term value="attributes" definition="Variables that hold data specific to each object instance in a class." />
+                    <Term value="method" definition="A function defined inside a class, used to perform actions or return information." />
+                    <Term value="objects" definition="An instance of a class containing data and methods defined by that class." />
+                    <Term value="String" definition="A sequence of characters, commonly used to represent text in Java." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1232171635">
+                <value>
+                  <list>
+                    <Term value="main method" definition="The entry point of a Java application; where program execution begins." />
+                    <Term value="class" definition="A blueprint in Java for creating objects, defining attributes and methods." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1381384533">
+                <value>
+                  <list>
+                    <Term value="blueprint" definition="A template or prototype that defines the structure and behavior of objects in a class." />
+                    <Term value="instance" definition="A specific, individual object created from a class in Java." />
+                    <Term value="instantiation" definition="The process of creating a new object from a class." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1420098605">
+                <value>
+                  <list>
+                    <Term value="constructor" definition="A special method used to initialize new objects of a class." />
+                    <Term value="compiler" definition="A program that translates source code into executable machine code." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1492283671">
+                <value>
+                  <list>
+                    <Term value="console" definition="A text-based interface for displaying output and accepting input from the user during program execution." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1763799876">
+                <value>
+                  <list>
+                    <Term value="branches" definition="A possible path of execution in conditional statements, chosen based on evaluated conditions." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1786526827">
+                <value>
+                  <list>
+                    <Term value="boolean" definition="A data type representing true or false values, used for logical operations in Java." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1801119657">
+                <value>
+                  <list>
+                    <Term value="main method" definition="The entry point of a Java application; where program execution begins." />
+                    <Term value="parameters" definition="Values passed into a method or constructor to customize its behavior." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1836164202">
+                <value>
+                  <list>
+                    <Term value="type casting" definition="Converting a variable from one data type to another, such as from int to double." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="2022360256">
+                <value>
+                  <list>
+                    <Term value="break" definition="Exits the nearest enclosing loop immediately when executed." />
+                    <Term value="continue" definition="Skips the current loop iteration and proceeds to the next iteration." />
+                  </list>
+                </value>
+              </entry>
+            </map>
+          </value>
+        </entry>
+      </map>
+    </terms>
+    <termsVersions>
+      <map>
+        <entry key="en" value="75" />
+      </map>
+    </termsVersions>
+  </component>
+</project>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="TranslationProjectSettings">
+    <option name="currentTranslationLanguage" value="Korean" />
+    <option name="structureTranslation">
+      <map>
+        <entry key="Korean">
+          <value>
+            <map>
+              <entry key="1167606548" value="불리언 연산자  " />
+              <entry key="1172206622" value="ArrayList  " />
+              <entry key="1194015323" value="2.3 스마트 방  " />
+              <entry key="1196248852" value="1.2 안녕하세요 말하기  " />
+              <entry key="1196537834" value="2.8 백 번째 소수  " />
+              <entry key="1208561450" value="3.5 조합 만들어 보기  " />
+              <entry key="1221061772" value="4. 배열과 문자열 메서드  " />
+              <entry key="1232171635" value="속성  " />
+              <entry key="1259972476" value="1. 기초  " />
+              <entry key="1306377187" value="3.3 자동차 공장  " />
+              <entry key="1381384533" value="객체" />
+              <entry key="1420098605" value="래퍼 클래스  " />
+              <entry key="1424144882" value="2D 배열  " />
+              <entry key="1458623594" value="else 절  " />
+              <entry key="146846183" value="출력 문장  " />
+              <entry key="1492283671" value="루프와 조건문의 중첩  " />
+              <entry key="1500745428" value="for 루프  " />
+              <entry key="1517593854" value="1.1 클래스 문법  " />
+              <entry key="153664861" value="break와 continue  " />
+              <entry key="1571634050" value="연산자  " />
+              <entry key="163043894" value="비교 연산자  " />
+              <entry key="1656067101" value="2.2 롤러코스터  " />
+              <entry key="1714730413" value="5. ArrayList와 2D 배열  " />
+              <entry key="174228237" value="3.4 나이 추정  " />
+              <entry key="1763799876" value="조건문 중첩  " />
+              <entry key="1786526827" value="조건문  " />
+              <entry key="1801119657" value="생성자  " />
+              <entry key="1836164202" value="정수 나눗셈과 타입 변환  " />
+              <entry key="1857440617" value="구조  " />
+              <entry key="1865229541" value="3. 객체와 메서드  " />
+              <entry key="191251321" value="3.2 신발 제작자  " />
+              <entry key="1964999357" value="2.5 while 을 사용한 나머지 계산  " />
+              <entry key="1988817137" value="변수  " />
+              <entry key="2022360256" value="2.7 소수 찾기  " />
+              <entry key="20295130" value="메서드  " />
+              <entry key="268282561" value="객체  " />
+              <entry key="286933269" value="값 저장하기  " />
+              <entry key="374787955" value="4.2 단어 자르기  " />
+              <entry key="379483787" value="2. 흐름 제어  " />
+              <entry key="386892893" value="향상된 for 루프  " />
+              <entry key="388560208" value="조건문  " />
+              <entry key="394179273" value="ArrayList 메서드  " />
+              <entry key="39994299" value="배열  " />
+              <entry key="434628801" value="3.1 물건 만들기  " />
+              <entry key="4498089" value="문자열 길이  " />
+              <entry key="475567448" value="1.3 카페 영수증  " />
+              <entry key="486922715" value="5.3 체스판  " />
+              <entry key="508098711" value="5.2 평균 계산기  " />
+              <entry key="526788683" value="2.1 고객 점수  " />
+              <entry key="536585673" value="반복문  " />
+              <entry key="581073511" value="4.1 가장 짧은 단어 찾기  " />
+              <entry key="623574329" value="1.5 불리언 논리  " />
+              <entry key="625828145" value="while 루프  " />
+              <entry key="663078726" value="ArrayLists  " />
+              <entry key="668292919" value="배열  " />
+              <entry key="681291401" value="1.6 불리언 계산기  " />
+              <entry key="708850433" value="값 반환하기  " />
+              <entry key="709254056" value="3.6 양 세기  " />
+              <entry key="765496906" value="자바의 클래스  " />
+              <entry key="773870136" value="1.4 속도 계산기  " />
+              <entry key="790415469" value="단축 연산자  " />
+              <entry key="811575268" value="2.6 얼음 깨기  " />
+              <entry key="826301480" value="값 변경하기  " />
+              <entry key="857896698" value="문자열 메서드  " />
+              <entry key="883084506" value="Static 속성  " />
+              <entry key="903725586" value="5.1 월 정리 도구  " />
+              <entry key="909729228" value="Void 메서드  " />
+              <entry key="921222428" value="2D 배열  " />
+              <entry key="931326089" value="4.3 문자 리스트 가져오기  " />
+              <entry key="934983136" value="4.4 오류 세기  " />
+              <entry key="983694976" value="서브문자열  " />
+              <entry key="992640493" value="2.4 홀수 선택기  " />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="translationVersions">
+      <map>
+        <entry key="Korean" value="656" />
+      </map>
+    </option>
+  </component>
+</project>

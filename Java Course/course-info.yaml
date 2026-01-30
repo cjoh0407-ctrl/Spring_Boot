@@ -1,0 +1,11 @@
+type: marketplace
+title: Java Course
+language: English
+programming_language: Java
+content:
+  - lesson1
+additional_files:
+  - name: build.gradle
+  - name: settings.gradle
+  - name: gradle/wrapper/gradle-wrapper.properties
+yaml_version: 5
